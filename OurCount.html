@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conserve Originality</title>
+	<link rel="shortcut icon" href="images/copy-icon.png">
+
+
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+
+
+	<!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+  	
+  	body {
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 0px;
+  background-color: #DAE9EC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+/*Top Section*/
+
+.Colour{
+	background-color: #8B4083;
+	color: #fff;
+}
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.applyPadding{
+	padding: 2% 15% 7% 15%;
+}
+
+.AddPaddingToTitle{
+	padding-top: 5%;
+}
+
+.AddPaddingToTitleImage{
+	padding-top: 1%;
+}
+
+.title-image {
+  width: 100%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 1%;
+  
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+
+/*Features*/
+
+.white-section {
+  background-color: #fff;
+}
+
+#Features{
+	padding: 100px;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: Montserrat;
+}
+
+.feature-column {
+  padding: 3% 2%;
+}
+
+.feature-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.textDecoration:hover{
+	text-decoration: none;
+}
+
+/* Footer */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+#Bottom{
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.anchor{
+	color: white;
+}
+
+.anchor:hover{
+	color: #f1f1f1;
+}
+
+/* Other Pages */
+.textarea{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
+.countButtonPadding{
+	margin-top: 2%
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+  .title-image {
+    visibility: hidden;
+    transform: rotate(0);
+  }
+}
+
+  </style>
+
+
+</head>
+<body>
+
+	<Section class="Colour" id="topSection">
+
+		<div class="Ccontainer-fluid applyPadding" style="padding-bottom: 2%;">
+			<!--Nav Bar -->
+
+			<nav class="navbar navbar-expand-lg navbar-dark">
+
+		        <a class="navbar-brand" href="">Conserve Originality</a>
+
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+
+		        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+		          <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		              <a class="nav-link" href="index.html">Home</a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" href="index.html#Features">Features</a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" href="index.html#Bottom">Contact</a>
+		            </li>
+		          </ul>
+
+		        </div>
+		      </nav>
+
+		</div>
+
+	</Section>
+
+	<!-- TextArea -->
+
+	<div class="container-fluid textarea">
+          
+            <textarea placeholder="Enter your content here..." name="UserCountText" id="TextForCount" rows="13" cols="100"></textarea><br>
+
+			<button type="button" class="btn btn-dark btn-lg countButtonPadding" id="MyCount">How many Number of words my text contain?</button>  <br>   
+			<h3 class="outputCount" style="padding-top: 2%;"></h3>     
+    </div>
+		
+
+	<!-- Footer -->
+
+     <footer class="Colour" id="Bottom">
+       <div class="container-fluid">
+         <a href="" class="anchor"><i class="social-icon fab fa-facebook-f"></i></a>
+         <a href="" class="anchor"><i class="social-icon fab fa-twitter"></i></a>
+         <a href="" class="anchor"><i class="social-icon fab fa-instagram"></i></a>
+         <a href="" class="anchor"><i class="social-icon fas fa-envelope"></i></a>
+         <p>© Copyright 2018 TinDog</p>
+       </div>
+     </footer>
+
+     <script type="text/javascript">
+     	
+
+		document.getElementById("MyCount").addEventListener("click",CountWords);
+		 	function CountWords(){
+		 	
+			var UserCountText = document.getElementById("TextForCount").value;
+			
+			var UserCountArraySplit = UserCountText.split(" ");
+			var ShowOutputCountPlural = "Their are "+UserCountArraySplit.length+" words in your text."
+			
+			var ShowOutputCountSingular = "Their is "+UserCountArraySplit.length+" word in your text."
+			
+			if (UserCountArraySplit>1) {  			
+				document.querySelector(".outputCount").innerHTML= ShowOutputCountPlural;
+			}
+			else{
+				document.querySelector(".outputCount").innerHTML= ShowOutputCountSingular;
+			}
+		}
+
+
+
+     </script>
+</body>
+</html>

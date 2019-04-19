@@ -1,0 +1,19 @@
+{
+  "name": "conserve-originality",
+  "version": "1.0.0",
+  "description": "1st conserver originality project. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Mrunmayee Dixit\"",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chunk-text": "^1.0.5",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4",
+    "plagiarism-checker": "^1.2.1",
+    "request": "^2.88.0"
+  }
+}

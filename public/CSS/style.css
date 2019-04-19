@@ -1,0 +1,129 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 0px;
+  background-color: #DAE9EC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+/*Top Section*/
+
+.Colour{
+	background-color: #8B4083;
+	color: #fff;
+}
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.applyPadding{
+	padding: 2% 15% 7% 15%;
+}
+
+.AddPaddingToTitle{
+	padding-top: 5%;
+}
+
+.AddPaddingToTitleImage{
+	padding-top: 1%;
+}
+
+.title-image {
+  width: 100%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 1%;
+  
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+
+/*Features*/
+
+.white-section {
+  background-color: #fff;
+}
+
+#Features{
+	padding: 100px;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: Montserrat;
+}
+
+.feature-column {
+  padding: 3% 2%;
+}
+
+.feature-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.textDecoration:hover{
+	text-decoration: none;
+}
+
+/* Footer */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+#Bottom{
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.anchor{
+	color: white;
+}
+
+.anchor:hover{
+	color: #f1f1f1;
+}
+
+/* Other Pages */
+.textarea{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
+.countButtonPadding{
+	margin-top: 2%
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+  .title-image {
+    visibility: hidden;
+    transform: rotate(0);
+  }
+}
