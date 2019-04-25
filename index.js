@@ -246,8 +246,9 @@ if(outputArray.length>0){
 
 
 
+
 if (req.body.UserPrefrence == "Mech") {
-		var outputArray=[];
+	var outputArray=[];
 
 	fs.readFile('Mechanical.txt', 'utf-8', (err, data) => { 
     if (err) throw err; 
@@ -255,9 +256,6 @@ if (req.body.UserPrefrence == "Mech") {
     // Converting Raw Buffer to text 
     // data using tostring function. 
     var MilalaData = data; 
-
-
-
 
 if (req.body.checkbox == "Yes") {
 	console.log("yes");
@@ -273,14 +271,15 @@ if (req.body.checkbox == "Yes") {
 
 
 
-					if(cfe(filename) == '.txt'){
+
+				if(cfe(filename) == '.txt'){
 
 
 
-					
+
+
 				fs.readFile(filename,'utf-8',(err, data) => {
 					if (err) throw err;
-
 
 					UserDBCheckText = data;
 					var out = chunk(UserDBCheckText, 21);
@@ -308,8 +307,13 @@ if (req.body.checkbox == "Yes") {
 
 			}
 
+
 		}
+
+
 	}
+
+
 
 console.log(outputArray.length);
 
@@ -326,32 +330,40 @@ if(outputArray.length>0){
 }
 
 
+
 		fs.unlink(filename,function(err){
 			if(err){
 				console.log("Error while deleting the file "+err);
 			}
 		});
 
+
 				});	
 
 
 
-			}else{
+
+		}else{
 				res.sendFile(__dirname + "/Failure.html");
 				fs.unlink(filename,function(err){
 					if(err){
 					console.log("Error while deleting the file "+err);
 					}
 				});
+		}
+
+
+
+
+
+
 			}
 
-
-
-
-
-			}
 		});
+
 	}
+
+
 
 }
 
@@ -359,12 +371,10 @@ if(outputArray.length>0){
 
 
 
-
-
-
-
-
 else{
+	UserDBCheckText = req.body.TextForPlagCheckfromOurDB;
+
+
     var out = chunk(UserDBCheckText, 21);
 	var UserCheckTextArraySplitLength = out.length-1;
 	var ourTextLength = MilalaData.length;
@@ -406,12 +416,14 @@ if(outputArray.length>0){
 	outputArray1 = "None";
 	res.redirect("/OurCheck");
 }
+}	
 
-}
 	}); 
 
 
 	}
+
+
 
 
 
