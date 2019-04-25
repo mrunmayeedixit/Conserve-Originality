@@ -69,52 +69,13 @@
 
 	</Section>
 
-	<!-- TextArea -->
 
-	<div class="container-fluid textarea">
-          
-            <textarea placeholder="Enter your content here..." name="UserCountText" id="TextForCount" rows="13" cols="100"></textarea><br>
 
-			<button type="button" class="btn btn-dark btn-lg countButtonPadding" id="MyCount">Count Words</button>  <br>   
-			<h3 class="outputCount" style="padding-top: 2%;"></h3>     
-    </div>
-		
-
-	<!-- Footer -->
-
-     <footer class="Colour" id="Bottom">
-       <div class="container-fluid">
-         <a href="" class="anchor"><i class="social-icon fab fa-facebook-f"></i></a>
-         <a href="" class="anchor"><i class="social-icon fab fa-twitter"></i></a>
-         <a href="" class="anchor"><i class="social-icon fab fa-instagram"></i></a>
-         <a href="" class="anchor"><i class="social-icon fas fa-envelope"></i></a>
-         <p>© Copyright 2019 Conserve Originality</p>
-        </div>
-     </footer>
-
-     <script type="text/javascript">
-     	
-
-		document.getElementById("MyCount").addEventListener("click",CountWords);
-		 	function CountWords(){
-		 	
-			var UserCountText = document.getElementById("TextForCount").value;
-			
-			var UserCountArraySplit = UserCountText.split(" ");
-			var ShowOutputCountPlural = "Their are "+UserCountArraySplit.length+" words in your text."
-			
-			var ShowOutputCountSingular = "Their is "+UserCountArraySplit.length+" word in your text."
-			
-			if (UserCountArraySplit>1) {  			
-				document.querySelector(".outputCount").innerHTML= ShowOutputCountPlural;
-			}
-			else{
-				document.querySelector(".outputCount").innerHTML= ShowOutputCountSingular;
-			}
-		}
+	<br><br>
+	<h2>Your Text is <%= Percent %>% Plagiarised.</h2>
+	<h3>The Plagiarised chunks are:-</h3><h4> <%= Chunks  %></h4>
 
 
 
-     </script>
+
 </body>
-</html>

@@ -72,9 +72,11 @@
 
 
 	<div class="container-fluid textarea">
+		
 		<form action="/OurCheck" enctype="multipart/form-data" method="post">
 			<!-- DropDown -->
 			<select style="margin-top: 0; padding:5px;  margin-bottom: 5%;" name="UserPrefrence">
+				<option>Choose Branch</option>
 		  		<option value="Machine Learning">Machine Learning</option>
 		  		<option value="Mech">Strength of Material</option>
 		  		<option value="Extc">Extc.</option>
@@ -82,8 +84,8 @@
 		  		<option value="Food">Food Engineering</option>
 
 			</select>
-			<br>
-          
+
+          	<h5>If you want to check plagiarism by uploading text file, click the arrow </h5><a href="#down"><img style="width: 3%;" src="/images/Down.png"></a><br><br>
           	<!-- TextArea -->
 
             <textarea placeholder="Enter your content here..." name="TextForPlagCheckfromOurDB" id="TextForOurCheck" rows="13" cols="100" ></textarea><br><br>
@@ -93,7 +95,7 @@
             </select>
              I want to upload text Document for plagiarism check.
 
-            <input type="file" name="filename"><br>
+            <input type="file" id="down" name="filename"><br>
 
 			<button type="submit" class="btn btn-dark btn-lg countButtonPadding" id="MyCheck">Check Plagiarism</button>  <br>   
 			<h3 class="outputOurCheck" style="padding-top: 2%;"></h3>  
@@ -104,13 +106,13 @@
 
 	<!-- Footer -->
 
-     <footer class="Colour" id="Bottom">
+     <footer class="Colour" id="Bottom" >
        <div class="container-fluid">
          <a href="" class="anchor"><i class="social-icon fab fa-facebook-f"></i></a>
          <a href="" class="anchor"><i class="social-icon fab fa-twitter"></i></a>
          <a href="" class="anchor"><i class="social-icon fab fa-instagram"></i></a>
          <a href="" class="anchor"><i class="social-icon fas fa-envelope"></i></a>
-         <p>© Copyright 2018 TinDog</p>
+         <p>© Copyright 2019 Conserve Originality</p>
        </div>
      </footer>
 

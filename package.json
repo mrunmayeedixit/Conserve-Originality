@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "check-file-extension": "0.0.7",
     "chunk-text": "^1.0.5",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-fileupload": "^1.1.4",
     "plagiarism-checker": "^1.2.1",
