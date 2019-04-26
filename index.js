@@ -433,10 +433,10 @@ if(outputArray.length>0){
 
 
 
-	if (req.body.UserPrefrence == "Extc") {
+	if (req.body.UserPrefrence == "Electrical") {
 		var outputArray=[];
 
-	fs.readFile('Extc.txt', 'utf-8', (err, data) => { 
+	fs.readFile('Electrical.txt', 'utf-8', (err, data) => { 
     if (err) throw err; 
   
     // Converting Raw Buffer to text 
@@ -776,10 +776,10 @@ if(outputArray.length>0){
 
 
 
-	if (req.body.UserPrefrence == "Food") {
+	if (req.body.UserPrefrence == "Biomedical") {
 		var outputArray=[];
 
-	fs.readFile('Food.txt', 'utf-8', (err, data) => { 
+	fs.readFile('biomedical.txt', 'utf-8', (err, data) => { 
     if (err) throw err; 
   
     // Converting Raw Buffer to text 
@@ -968,7 +968,7 @@ app.post("/APICheck" , function(req,res){
 //     method:"POST",
 //     headers: {
 //       ContentType : 'application/json',
-//        Authorization:"mayureshdixit2008@gmail.com 3F09C012-4CEA-4D0A-8501-C184C8195EB3"
+//       // Authorization:"mayureshdixit2008@gmail.com 3F09C012-4CEA-4D0A-8501-C184C8195EB3"
 //     },
 //     json: true,
 //     body:{
@@ -1003,7 +1003,7 @@ app.post("/APICheck" , function(req,res){
     method:"POST",
     headers: {
       ContentType : 'application/json',
-      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTYzNTA5MDUsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.Z0bSBZLX4aoKCNgEZfIp3NsYolyy3W2vcrqjI5lt2BFNbhWI-zL2MUkTBBco9L6F0QRSE05qkZBB0dlzuiyBGEqzUNb814gIdG9HveFPWepNCulqGGO7I0jD_S9ugJsSKERKhfp3knjs5utcm11qFcvN_Tk0pkkhV3tdqqMcVwJPxRPeUo6MjbNgzsDjwifNO1KZPov2ll6MOdAnEjN8nJa9wh8E1jc4HF3ynM7x4StaolN0kf9XDtIooWY1B3IxyTVBhElNrzTsBLCm8UOC5hMWMoNcr6GW39VoQvBghF-mYeF0Vil8EmyXtrENmCeiEPJf4IEmu1iEAvihzwo7Ew",
+      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTY0MjYxOTYsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.WpgltjZi7I0lYv6FDXlpi6v5TAt-ZqSywhJAQi4njhvPtDXLyn9HLRJs7LypKZ-DJiijTpGuMBoPfCTiq_lSdEN59RcdBOjjVeJ3AkcUOH1ylq7l56IdWyDb1aaFG6C6mliiYZwmJBH3z-8t2RRjDdPvLRVqcxl_N0iQlULNm0N6SSv7pFcpghTef1oq6nK8zoHPJ4HfkYhN_5mubPHP5JVW9plqxmEG0uHo1jA-pawyObFJLTtsmPjQsYxZxbuLVR1IIbEVLruCnfe6EHuHeXQj0Wxzsi8rKpC-gEQZfn6EgxCXv9Hl9qK4zsxPPPf0Ta_pDoazlHzTOeDHgJ_nsg",
     },
     json: true,
     body:UserCheckText,
@@ -1036,7 +1036,7 @@ app.get("/result", function(req,res){
     method:"GET",
     headers: {
       ContentType : 'application/json',
-      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTYzNTA5MDUsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.Z0bSBZLX4aoKCNgEZfIp3NsYolyy3W2vcrqjI5lt2BFNbhWI-zL2MUkTBBco9L6F0QRSE05qkZBB0dlzuiyBGEqzUNb814gIdG9HveFPWepNCulqGGO7I0jD_S9ugJsSKERKhfp3knjs5utcm11qFcvN_Tk0pkkhV3tdqqMcVwJPxRPeUo6MjbNgzsDjwifNO1KZPov2ll6MOdAnEjN8nJa9wh8E1jc4HF3ynM7x4StaolN0kf9XDtIooWY1B3IxyTVBhElNrzTsBLCm8UOC5hMWMoNcr6GW39VoQvBghF-mYeF0Vil8EmyXtrENmCeiEPJf4IEmu1iEAvihzwo7Ew",
+      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTY0MjYxOTYsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.WpgltjZi7I0lYv6FDXlpi6v5TAt-ZqSywhJAQi4njhvPtDXLyn9HLRJs7LypKZ-DJiijTpGuMBoPfCTiq_lSdEN59RcdBOjjVeJ3AkcUOH1ylq7l56IdWyDb1aaFG6C6mliiYZwmJBH3z-8t2RRjDdPvLRVqcxl_N0iQlULNm0N6SSv7pFcpghTef1oq6nK8zoHPJ4HfkYhN_5mubPHP5JVW9plqxmEG0uHo1jA-pawyObFJLTtsmPjQsYxZxbuLVR1IIbEVLruCnfe6EHuHeXQj0Wxzsi8rKpC-gEQZfn6EgxCXv9Hl9qK4zsxPPPf0Ta_pDoazlHzTOeDHgJ_nsg",
     },
   };
 
@@ -1073,7 +1073,7 @@ app.get("/status", function(req,res){
     method:"GET",
     headers: {
       ContentType : 'application/json',
-      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTYzNTA5MDUsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.Z0bSBZLX4aoKCNgEZfIp3NsYolyy3W2vcrqjI5lt2BFNbhWI-zL2MUkTBBco9L6F0QRSE05qkZBB0dlzuiyBGEqzUNb814gIdG9HveFPWepNCulqGGO7I0jD_S9ugJsSKERKhfp3knjs5utcm11qFcvN_Tk0pkkhV3tdqqMcVwJPxRPeUo6MjbNgzsDjwifNO1KZPov2ll6MOdAnEjN8nJa9wh8E1jc4HF3ynM7x4StaolN0kf9XDtIooWY1B3IxyTVBhElNrzTsBLCm8UOC5hMWMoNcr6GW39VoQvBghF-mYeF0Vil8EmyXtrENmCeiEPJf4IEmu1iEAvihzwo7Ew",
+      Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbmlzdHJhdG9yIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibWF5dXJlc2hkaXhpdDIwMDhAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJjM2ZkMDI3My1lMTg3LTQ3NmQtOGU2YS00OGUwZmNiODllNDkiLCJleHAiOjE1NTY0MjYxOTYsImlzcyI6ImNvcHlsZWFrcy5jb20iLCJhdWQiOiJhcGktdjEuY29weWxlYWtzLmNvbSJ9.WpgltjZi7I0lYv6FDXlpi6v5TAt-ZqSywhJAQi4njhvPtDXLyn9HLRJs7LypKZ-DJiijTpGuMBoPfCTiq_lSdEN59RcdBOjjVeJ3AkcUOH1ylq7l56IdWyDb1aaFG6C6mliiYZwmJBH3z-8t2RRjDdPvLRVqcxl_N0iQlULNm0N6SSv7pFcpghTef1oq6nK8zoHPJ4HfkYhN_5mubPHP5JVW9plqxmEG0uHo1jA-pawyObFJLTtsmPjQsYxZxbuLVR1IIbEVLruCnfe6EHuHeXQj0Wxzsi8rKpC-gEQZfn6EgxCXv9Hl9qK4zsxPPPf0Ta_pDoazlHzTOeDHgJ_nsg",
     },
   };
 

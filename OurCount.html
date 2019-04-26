@@ -102,16 +102,28 @@
 			var UserCountText = document.getElementById("TextForCount").value;
 			
 			var UserCountArraySplit = UserCountText.split(" ");
-			var ShowOutputCountPlural = "Their are "+UserCountArraySplit.length+" words in your text."
+			//var ShowOutputCountPlural = "There are "+UserCountArraySplit.length+" words in your text."
 			
-			var ShowOutputCountSingular = "Their is "+UserCountArraySplit.length+" word in your text."
+			//var ShowOutputCountSingular = "There is "+UserCountArraySplit.length+" word in your text."
 			
-			if (UserCountArraySplit>1) {  			
+			//if (UserCountArraySplit>1) {  			
+			//	document.querySelector(".outputCount").innerHTML= ShowOutputCountPlural;
+			//}
+			//else{
+			//	document.querySelector(".outputCount").innerHTML= ShowOutputCountSingular;
+			//}
+			var mystring = "";
+			if(mystring == UserCountText){
+				var ShowOutputCountPlural = "Word Count: 0";
 				document.querySelector(".outputCount").innerHTML= ShowOutputCountPlural;
 			}
 			else{
-				document.querySelector(".outputCount").innerHTML= ShowOutputCountSingular;
+				var ShowOutputCountPlural = "Word Count: "+UserCountArraySplit.length ;
+				document.querySelector(".outputCount").innerHTML= ShowOutputCountPlural;
+
 			}
+
+
 		}
 
 
